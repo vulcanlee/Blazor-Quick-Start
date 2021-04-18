@@ -3,6 +3,7 @@
 |專案名稱|說明|部落格網址|
 |-|-|-|
 |BQS01|靜態網頁 – 使用 ASP.NET Core 建立||
+|BQS02|你好範例 - 使用 ASP.NET Web Forms||
 |BQS03|||
 |BQS04|||
 |BQS05|||
