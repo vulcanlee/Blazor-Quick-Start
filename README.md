@@ -8,7 +8,7 @@
 |BQS04|你好範例 - 使用 ASP.NET Core MVC||
 |BQS05|你好範例 - 使用 ASP.NET Core Razor Page||
 |BQS06|你好範例 - 使用 ASP.NET Core Blazor – Server Side||
-|BQS07|||
+|BQS07|你好範例 - 使用 ASP.NET Core Blazor - WASM||
 |BQS08|||
 |BQS09|||
 |BQS10|||
