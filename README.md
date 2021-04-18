@@ -10,7 +10,7 @@
 |BQS06|你好範例 - 使用 ASP.NET Core Blazor – Server Side||
 |BQS07|你好範例 - 使用 ASP.NET Core Blazor - WASM||
 |BQS08|兩數相加 - 使用 Blazor 線上練習||
-|BQS09|||
+|BQS09|Blazor 開發動手實作||
 |BQS10|||
 |BQS11|||
 |BQS12|||
