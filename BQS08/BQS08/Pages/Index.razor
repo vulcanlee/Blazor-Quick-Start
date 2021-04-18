@@ -1,0 +1,18 @@
+﻿@page "/"
+
+<h1>Hello, 兩數相加 - 使用 Blazor 線上練習!</h1>
+
+<input @bind="value1" /> +
+<input @bind="value2" />
+<button @onclick="Add"> = </button>
+<span>@result</span>
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+@code {
+    int value1, value2, result;
+    void Add()
+    {
+        result = value1 + value2;
+    }
+}

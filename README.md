@@ -9,7 +9,7 @@
 |BQS05|你好範例 - 使用 ASP.NET Core Razor Page||
 |BQS06|你好範例 - 使用 ASP.NET Core Blazor – Server Side||
 |BQS07|你好範例 - 使用 ASP.NET Core Blazor - WASM||
-|BQS08|||
+|BQS08|兩數相加 - 使用 Blazor 線上練習||
 |BQS09|||
 |BQS10|||
 |BQS11|||
