@@ -6,8 +6,8 @@
 |BQS02|你好範例 - 使用 ASP.NET Web Forms||
 |BQS03|你好範例 - 使用 jQuery Library||
 |BQS04|你好範例 - 使用 ASP.NET Core MVC||
-|BQS05|||
-|BQS06|||
+|BQS05|你好範例 - 使用 ASP.NET Core Razor Page||
+|BQS06|你好範例 - 使用 ASP.NET Core Blazor – Server Side||
 |BQS07|||
 |BQS08|||
 |BQS09|||
