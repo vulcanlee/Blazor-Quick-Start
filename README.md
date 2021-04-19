@@ -11,7 +11,7 @@
 |BQS07|你好範例 - 使用 ASP.NET Core Blazor - WASM||
 |BQS08|兩數相加 - 使用 Blazor 線上練習||
 |BQS09|Blazor 開發動手實作||
-|BQS10|||
+|BQS10|使用資料庫反向工程，取得 EF Core 的資料模型||
 |BQS11|||
 |BQS12|||
 |BQS13|||

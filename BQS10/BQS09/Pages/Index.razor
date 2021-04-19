@@ -1,0 +1,13 @@
+﻿@page "/"
+@using BQS09.Models
+@inject SchoolContext SchoolContext
+<h1>Hello, Blazor 開發動手實作!</h1>
+
+<div class="h4">
+    @foreach (var item in SchoolContext.People.ToList())
+    {
+        <span class="text-primary">@item.FirstName, </span>
+    }
+</div>
+
+<SurveyPrompt Title="How is Blazor working for you?" />
