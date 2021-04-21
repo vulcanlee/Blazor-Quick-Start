@@ -1,0 +1,32 @@
+﻿@inject AppState AppState
+<div class="card">
+    <div class="card-header">
+        下層View
+    </div>
+    <div class="card-body">
+        <p class="text-primary">@message</p>
+        <button @onclick="OnEmptyButton">觸發按鈕空白事件</button>
+    </div>
+</div>
+
+@code {
+    string message = "第一次啟動訊息";
+
+    protected override void OnInitialized()
+    {
+        AppState.OnChange += () =>
+        {
+            StateHasChanged();
+        };
+        AppState.OnMessageChange += (x) =>
+        {
+            message = x;
+            StateHasChanged();
+        };
+    }
+
+    void OnEmptyButton()
+    {
+
+    }
+}

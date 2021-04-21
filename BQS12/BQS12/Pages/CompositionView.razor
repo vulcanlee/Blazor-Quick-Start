@@ -1,0 +1,52 @@
+﻿@page "/Composition"
+@inject AppState AppState
+
+<div class="container">
+    <div class="row">
+        <div class="co6">
+            <div class="card my-auto">
+                <div class="card-header">
+                    外層組合元件
+                </div>
+                <div class="card-body">
+                    <div class="bg-success">
+                        <button @onclick="OnEmptyButton">觸發按鈕空白事件</button>
+                    </div>
+                    <div class="bg-success">
+                        <button @onclick="OnUpdateAllVuewButton">觸發更新左邊元件的狀態</button>
+                    </div>
+                    <div>
+                        <input @bind-value="message"/>
+                    </div>
+                    <div class="bg-success">
+                        <button @onclick="OnRefreshAllVuewButton">觸發顯示左邊元件的文字</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="co6">
+            <div class="bg-warning">
+                <TopView/>
+            </div>
+            <div class="bg-info">
+                <BottomView/>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    string message = "";
+    void OnEmptyButton()
+    {
+
+    }
+    void OnUpdateAllVuewButton()
+    {
+        AppState.UpdateAllView();
+    }
+    void OnRefreshAllVuewButton()
+    {
+        AppState.RefreshMessageAllView(message);
+    }
+}
