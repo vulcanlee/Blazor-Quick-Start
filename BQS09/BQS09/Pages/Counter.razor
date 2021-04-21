@@ -6,8 +6,26 @@
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
+<div>
+    <input value="@message" />
+</div>
+
+<div class="text-danger">
+    @message
+</div>
+
+<div>
+    <input @bind-value="@messageTwoWay" />
+</div>
+
+<div class="text-danger">
+    @messageTwoWay
+</div>
+
 @code {
     private int currentCount = 0;
+    string message = "Hi Vulcan";
+    string messageTwoWay = "Hi Two Way Binding";
 
     private void IncrementCount()
     {
