@@ -1,0 +1,20 @@
+﻿<div class="bg-warning p-2">
+    <h3>外層元件</h3>
+    <div><input @bind="Message" /></div>
+    <div>@Message</div>
+    <button class="btn btn-primary"
+            @onclick="SendNotification">送出變更通知</button>
+    <CascadingValue Value="@notificationCenter">
+            <InnerView />
+    </CascadingValue>
+</div>
+
+@code {
+    string Message = "";
+    NotificationCenter notificationCenter = new NotificationCenter();
+
+    void SendNotification()
+    {
+        notificationCenter.RefreshMessageAllView(Message);
+    }
+}
