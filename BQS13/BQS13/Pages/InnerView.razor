@@ -1,0 +1,19 @@
+﻿<div class="bg-primary m-3 ml-5 p-2">
+    <h3>內層元件</h3>
+    <div><input @bind="Message" /></div>
+    <div>@Message</div>
+    <div><button class="btn btn-success"
+                 @onclick="SendNotification">送出</button></div>
+</div>
+
+@code {
+    string Message = "";
+    [Parameter]
+    public EventCallback<string> Notification { get; set; }
+
+    async Task SendNotification()
+    {
+        if (Notification.HasDelegate)
+            await Notification.InvokeAsync(Message);
+    }
+}
