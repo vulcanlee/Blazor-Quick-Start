@@ -1,0 +1,38 @@
+﻿@page "/"
+
+<h1>Hello, 事件與 DOM 物件存取!</h1>
+
+<div>
+    <span class="p-2 @bg1" @onclick='()=>OnClick("剪刀")'>剪刀</span>
+    <span class="p-2 @bg2" @onclick='()=>OnClick("石頭")'>石頭</span>
+    <span class="p-2 @bg3" @onclick='()=>OnClick("布")'>布</span>
+</div>
+@if (bg1 == ""&& bg2 == ""&& bg3 == "")
+{
+    <div>請選擇</div>
+}
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+@code{
+    string bg1 = "", bg2 = "", bg3 = "";
+    void Reset() { bg1 = ""; bg2 = ""; bg3 = ""; }
+    void OnClick(string which)
+    {
+        Reset();
+        switch (which)
+        {
+            case "剪刀":
+                bg1 = "bg-danger";
+                break;
+            case "石頭":
+                bg2 = "bg-primary";
+                break;
+            case "布":
+                bg3 = "bg-warning";
+                break;
+            default:
+                break;
+        }
+    }
+}
