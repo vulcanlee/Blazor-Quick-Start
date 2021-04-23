@@ -1,0 +1,20 @@
+﻿<div class="bg-warning p-2">
+    <h3>外層元件</h3>
+    <div><input @bind="outerMessage" /></div>
+    <div>@outerMessage</div>
+    <div><button class="btn btn-primary"
+                @onclick="OnSending">送出</button>
+    </div>
+    <InnerView @ref="InnerBlazorComponent" />
+</div>
+
+@code {
+    string outerMessage = "";
+    InnerView InnerBlazorComponent;
+    void OnSending()
+    {
+        InnerBlazorComponent.InnerMessage = outerMessage;
+        // 把這行註解起來，和看會如何
+        InnerBlazorComponent.Rerender();
+    }
+}
