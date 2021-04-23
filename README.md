@@ -22,7 +22,7 @@
 |BQS18|屬性異動偵測 - 實作 PropertyChanged 機制||
 |BQS19|元件傳遞資料 -外層變化，通知內層 (PropertyChanged)||
 |BQS20|元件傳遞資料 -外層變化，通知內層 (使用參數傳遞)||
-|BQS21|||
+|BQS21|即時更新 Hot Reload 與 啟動設定檔案||
 |BQS22|||
 |BQS23|||
 |BQS24|||
